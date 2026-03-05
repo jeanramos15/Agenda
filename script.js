@@ -106,9 +106,8 @@ function checkNotifications() {
   });
 }
 
-setInterval(checkNotifications, 60000);
-
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js")
     .then(() => console.log("Service Worker registrado"));
+
 }
