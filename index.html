@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+    <meta charset="UTF-8">
+    <title>Minha Agenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Minha Agenda</h1>
+
+        <div class="form">
+            <input type="text" id="taskInput" placeholder="Digite sua tarefa">
+            <input type="date" id="dateInput">
+            <input type="time" id="timeInput">
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+        <button onclick="requestNotificationPermission()">
+            Ativar Notificações
+        </button>
+
+        <h2>Hoje</h2>
+        <ul id="todayList"></ul>
+
+        <h2>Concluídas</h2>
+        <ul id="completedList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
